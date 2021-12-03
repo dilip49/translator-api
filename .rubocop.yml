@@ -1,0 +1,29 @@
+AllCops:
+  Exclude:
+    - bin/*
+    - node_modules/**/*
+    - config/**/*
+    - db/*
+    - lib/**/*
+Metrics/BlockLength:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: true
+Naming/ConstantName:
+  Enabled: true
+Lint/UselessAssignment:
+  Enabled: true
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/BlockComments:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false

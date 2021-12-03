@@ -1,0 +1,2440 @@
+{
+	"info": {
+		"_postman_id": "66490f11-7067-43e7-bffc-ab06bfd49411",
+		"name": "translator_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"glossaries"
+					],
+					"query": [
+						{
+							"key": "target_language_code",
+							"value": "en"
+						},
+						{
+							"key": "source_language_code",
+							"value": "ee"
+						}
+					]
+				},
+				"description": "create glossary"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries"
+							],
+							"query": [
+								{
+									"key": "target_language_code",
+									"value": "en"
+								},
+								{
+									"key": "source_language_code",
+									"value": "ee"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"893b4bd6238a22c7d894cdce3a705853\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d6ae612f-375e-47fa-9cc9-21861242f828"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.163019"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries"
+							],
+							"query": [
+								{
+									"key": "target_language_code",
+									"value": "en"
+								},
+								{
+									"key": "source_language_code",
+									"value": "ee"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"893b4bd6238a22c7d894cdce3a705853\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d6ae612f-375e-47fa-9cc9-21861242f828"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.163019"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries?target_language_code=en&source_language_code=ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries"
+							],
+							"query": [
+								{
+									"key": "target_language_code",
+									"value": "en"
+								},
+								{
+									"key": "source_language_code",
+									"value": "ee"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"732c7468f8a4299baa9dddc0aa346c1e\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "318cf8b8-6eee-4604-bc6f-9075a53616bb"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.109028"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 15,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-07T18:43:05.209Z\",\n        \"updated_at\": \"2021-08-07T18:43:05.209Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/api/v1/glossaries/15/terms?source_term=recruitment&target_term=hire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/glossaries/1/terms?source_term=Dzoɖagbe&target_term=monday",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"glossaries",
+						"1",
+						"terms"
+					],
+					"query": [
+						{
+							"key": "source_term",
+							"value": "Dzoɖagbe"
+						},
+						{
+							"key": "target_term",
+							"value": "monday"
+						}
+					]
+				},
+				"description": "creates terms for glossary."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/glossaries/15/terms?source_term=recruitment&target_term=hire",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries/15/terms?source_term=recruitment&target_term=hire",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries",
+								"15",
+								"terms"
+							],
+							"query": [
+								{
+									"key": "source_term",
+									"value": "recruitment"
+								},
+								{
+									"key": "target_term",
+									"value": "hire"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ef9a3e575f7189ab944d420337940fef\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "95a2b554-7a31-491e-8a1c-c8446e2b84a8"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.014240"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 13,\n        \"source_term\": \"recruitment\",\n        \"target_term\": \"hire\",\n        \"glossary_id\": 15,\n        \"created_at\": \"2021-08-07T18:44:24.535Z\",\n        \"updated_at\": \"2021-08-07T18:44:24.535Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries/15/terms?source_term=recruitment&target_term=hire",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries/1/terms?source_term=Dzoɖagbe&target_term=monday",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries",
+								"1",
+								"terms"
+							],
+							"query": [
+								{
+									"key": "source_term",
+									"value": "Dzoɖagbe"
+								},
+								{
+									"key": "target_term",
+									"value": "monday"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"058380b432b293af61ce08569caf7523\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "c1e29c49-92f2-442b-a869-065337a83500"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.052315"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 1,\n        \"source_term\": \"Dzoɖagbe\",\n        \"target_term\": \"monday\",\n        \"glossary_id\": 1,\n        \"created_at\": \"2021-08-09T10:12:23.070Z\",\n        \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries/1/terms?source_term=Dzoɖagbe&target_term=monday",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries/1/terms?source_term=Dzoɖagbe&target_term=monday",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries",
+								"1",
+								"terms"
+							],
+							"query": [
+								{
+									"key": "source_term",
+									"value": "Dzoɖagbe"
+								},
+								{
+									"key": "target_term",
+									"value": "monday"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"058380b432b293af61ce08569caf7523\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "c1e29c49-92f2-442b-a869-065337a83500"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.052315"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 1,\n        \"source_term\": \"Dzoɖagbe\",\n        \"target_term\": \"monday\",\n        \"glossary_id\": 1,\n        \"created_at\": \"2021-08-09T10:12:23.070Z\",\n        \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=This is a recruitment task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/translations?source_language_code=ee&target_language_code=en&source_text=It is Dzoɖagbe.&glossary_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"translations"
+					],
+					"query": [
+						{
+							"key": "source_language_code",
+							"value": "ee"
+						},
+						{
+							"key": "target_language_code",
+							"value": "en"
+						},
+						{
+							"key": "source_text",
+							"value": "It is Dzoɖagbe."
+						},
+						{
+							"key": "glossary_id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "create translation."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/translations?source_language_code=ee&target_language_code=en&source_text=It is Dzoɖagbe. lets go to work!&glossary_id=1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations?source_language_code=ee&target_language_code=en&source_text=It is Dzoɖagbe. lets go to work!&glossary_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations"
+							],
+							"query": [
+								{
+									"key": "source_language_code",
+									"value": "ee"
+								},
+								{
+									"key": "target_language_code",
+									"value": "en"
+								},
+								{
+									"key": "source_text",
+									"value": "It is Dzoɖagbe. lets go to work!"
+								},
+								{
+									"key": "glossary_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"59d931817b0de1282f0b9c1da217cb9f\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "360f3b59-c1c3-4094-affc-f7bce832c855"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.028819"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"source_text\": \"It is Dzoɖagbe.\",\n        \"glossary_id\": 1,\n        \"created_at\": \"2021-08-09T10:13:40.327Z\",\n        \"updated_at\": \"2021-08-09T10:13:40.327Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/translations?source_language_code=ee&target_language_code=en&source_text=It is Dzoɖagbe.&glossary_id=1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations?source_language_code=ee&target_language_code=en&source_text=It is Dzoɖagbe.&glossary_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations"
+							],
+							"query": [
+								{
+									"key": "source_language_code",
+									"value": "ee"
+								},
+								{
+									"key": "target_language_code",
+									"value": "en"
+								},
+								{
+									"key": "source_text",
+									"value": "It is Dzoɖagbe."
+								},
+								{
+									"key": "glossary_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"59d931817b0de1282f0b9c1da217cb9f\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "360f3b59-c1c3-4094-affc-f7bce832c855"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.028819"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"source_text\": \"It is Dzoɖagbe.\",\n        \"glossary_id\": 1,\n        \"created_at\": \"2021-08-09T10:13:40.327Z\",\n        \"updated_at\": \"2021-08-09T10:13:40.327Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=This is a recruitment task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=This is a recruitment task&glossary_id=15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations"
+							],
+							"query": [
+								{
+									"key": "source_language_code",
+									"value": "en"
+								},
+								{
+									"key": "target_language_code",
+									"value": "ee"
+								},
+								{
+									"key": "source_text",
+									"value": "This is a recruitment task"
+								},
+								{
+									"key": "glossary_id",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14ab0896a6f8555607f37cb2219bc9c2\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "abd56d6f-3e4b-499d-a6c3-5a99232713f7"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015284"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 11,\n        \"source_language_code\": \"en\",\n        \"target_language_code\": \"ee\",\n        \"source_text\": \"This is a recruitment task\",\n        \"glossary_id\": 15,\n        \"created_at\": \"2021-08-07T18:49:27.889Z\",\n        \"updated_at\": \"2021-08-07T18:49:27.889Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=This is a recruitment task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations?source_language_code=ee&target_language_code=en&source_text=It is Dzoɖagbe.&glossary_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations"
+							],
+							"query": [
+								{
+									"key": "source_language_code",
+									"value": "ee"
+								},
+								{
+									"key": "target_language_code",
+									"value": "en"
+								},
+								{
+									"key": "source_text",
+									"value": "It is Dzoɖagbe."
+								},
+								{
+									"key": "glossary_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"59d931817b0de1282f0b9c1da217cb9f\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "360f3b59-c1c3-4094-affc-f7bce832c855"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.028819"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"source_text\": \"It is Dzoɖagbe.\",\n        \"glossary_id\": 1,\n        \"created_at\": \"2021-08-09T10:13:40.327Z\",\n        \"updated_at\": \"2021-08-09T10:13:40.327Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/api/v1/glossaries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/glossaries/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"glossaries",
+						"1"
+					]
+				},
+				"description": "Get all glossaries with terms."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/glossaries/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c63dadc1e2cfca6bf6ec2d7aa9e6a958\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "30775a92-c582-440f-8886-f5b9c14f0b3c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.010300"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\",\n        \"terms\": [\n            {\n                \"id\": 1,\n                \"source_term\": \"Dzoɖagbe\",\n                \"target_term\": \"monday\",\n                \"glossary_id\": 1,\n                \"created_at\": \"2021-08-09T10:12:23.070Z\",\n                \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c63dadc1e2cfca6bf6ec2d7aa9e6a958\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "30775a92-c582-440f-8886-f5b9c14f0b3c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.010300"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\",\n        \"terms\": [\n            {\n                \"id\": 1,\n                \"source_term\": \"Dzoɖagbe\",\n                \"target_term\": \"monday\",\n                \"glossary_id\": 1,\n                \"created_at\": \"2021-08-09T10:12:23.070Z\",\n                \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c63dadc1e2cfca6bf6ec2d7aa9e6a958\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "30775a92-c582-440f-8886-f5b9c14f0b3c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.010300"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\",\n        \"terms\": [\n            {\n                \"id\": 1,\n                \"source_term\": \"Dzoɖagbe\",\n                \"target_term\": \"monday\",\n                \"glossary_id\": 1,\n                \"created_at\": \"2021-08-09T10:12:23.070Z\",\n                \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5d3b0ff42581664f591fe3a4342c285d\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "0a6bd4c8-f3ab-4d81-a711-253b421072ac"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.023823"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"source_language_code\": \"ab\",\n        \"target_language_code\": \"aa\",\n        \"created_at\": \"2021-08-05T17:30:47.107Z\",\n        \"updated_at\": \"2021-08-05T17:30:47.107Z\",\n        \"terms\": [\n            {\n                \"id\": 1,\n                \"source_term\": \"blue\",\n                \"target_term\": \"yellow\",\n                \"glossary_id\": 1,\n                \"created_at\": \"2021-08-05T17:30:59.686Z\",\n                \"updated_at\": \"2021-08-05T17:30:59.686Z\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"source_language_code\": \"av\",\n        \"target_language_code\": \"as\",\n        \"created_at\": \"2021-08-06T08:00:16.654Z\",\n        \"updated_at\": \"2021-08-06T08:00:16.654Z\",\n        \"terms\": []\n    },\n    {\n        \"id\": 3,\n        \"source_language_code\": \"ak\",\n        \"target_language_code\": \"af\",\n        \"created_at\": \"2021-08-06T08:04:49.186Z\",\n        \"updated_at\": \"2021-08-06T08:04:49.186Z\",\n        \"terms\": []\n    },\n    {\n        \"id\": 4,\n        \"source_language_code\": \"bg\",\n        \"target_language_code\": \"af\",\n        \"created_at\": \"2021-08-06T08:06:47.281Z\",\n        \"updated_at\": \"2021-08-06T08:06:47.281Z\",\n        \"terms\": []\n    },\n    {\n        \"id\": 5,\n        \"source_language_code\": \"bg\",\n        \"target_language_code\": \"aa\",\n        \"created_at\": \"2021-08-06T08:06:54.368Z\",\n        \"updated_at\": \"2021-08-06T08:06:54.368Z\",\n        \"terms\": []\n    },\n    {\n        \"id\": 6,\n        \"source_language_code\": \"as\",\n        \"target_language_code\": \"aa\",\n        \"created_at\": \"2021-08-06T08:07:08.019Z\",\n        \"updated_at\": \"2021-08-06T08:07:08.019Z\",\n        \"terms\": [\n            {\n                \"id\": 2,\n                \"source_term\": \"blue\",\n                \"target_term\": \"yellow\",\n                \"glossary_id\": 6,\n                \"created_at\": \"2021-08-06T08:10:16.868Z\",\n                \"updated_at\": \"2021-08-06T08:10:16.868Z\"\n            },\n            {\n                \"id\": 3,\n                \"source_term\": \"blue\",\n                \"target_term\": \"yellow\",\n                \"glossary_id\": 6,\n                \"created_at\": \"2021-08-06T08:10:49.963Z\",\n                \"updated_at\": \"2021-08-06T08:10:49.963Z\"\n            },\n            {\n                \"id\": 4,\n                \"source_term\": \"blue\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 6,\n                \"created_at\": \"2021-08-06T10:02:12.559Z\",\n                \"updated_at\": \"2021-08-06T10:02:12.559Z\"\n            },\n            {\n                \"id\": 5,\n                \"source_term\": \"blue\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 6,\n                \"created_at\": \"2021-08-06T10:07:18.398Z\",\n                \"updated_at\": \"2021-08-06T10:07:18.398Z\"\n            },\n            {\n                \"id\": 6,\n                \"source_term\": \"blue\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 6,\n                \"created_at\": \"2021-08-06T10:33:05.426Z\",\n                \"updated_at\": \"2021-08-06T10:33:05.426Z\"\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"source_language_code\": \"co\",\n        \"target_language_code\": \"aa\",\n        \"created_at\": \"2021-08-06T09:54:56.207Z\",\n        \"updated_at\": \"2021-08-06T09:54:56.207Z\",\n        \"terms\": []\n    },\n    {\n        \"id\": 8,\n        \"source_language_code\": \"ch\",\n        \"target_language_code\": \"aa\",\n        \"created_at\": \"2021-08-06T09:55:55.111Z\",\n        \"updated_at\": \"2021-08-06T09:55:55.111Z\",\n        \"terms\": []\n    },\n    {\n        \"id\": 9,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"aa\",\n        \"created_at\": \"2021-08-06T10:33:19.134Z\",\n        \"updated_at\": \"2021-08-06T10:33:19.134Z\",\n        \"terms\": [\n            {\n                \"id\": 8,\n                \"source_term\": \"sky\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 9,\n                \"created_at\": \"2021-08-06T11:31:58.832Z\",\n                \"updated_at\": \"2021-08-06T11:31:58.832Z\"\n            }\n        ]\n    },\n    {\n        \"id\": 10,\n        \"source_language_code\": \"cv\",\n        \"target_language_code\": \"aa\",\n        \"created_at\": \"2021-08-06T10:57:07.611Z\",\n        \"updated_at\": \"2021-08-06T10:57:07.611Z\",\n        \"terms\": []\n    },\n    {\n        \"id\": 11,\n        \"source_language_code\": \"aa\",\n        \"target_language_code\": \"cs\",\n        \"created_at\": \"2021-08-06T10:57:18.074Z\",\n        \"updated_at\": \"2021-08-06T10:57:18.074Z\",\n        \"terms\": [\n            {\n                \"id\": 7,\n                \"source_term\": \"blue\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 11,\n                \"created_at\": \"2021-08-06T10:57:36.757Z\",\n                \"updated_at\": \"2021-08-06T10:57:36.757Z\"\n            }\n        ]\n    },\n    {\n        \"id\": 12,\n        \"source_language_code\": \"en\",\n        \"target_language_code\": \"ee\",\n        \"created_at\": \"2021-08-06T11:34:19.456Z\",\n        \"updated_at\": \"2021-08-06T11:34:19.456Z\",\n        \"terms\": [\n            {\n                \"id\": 9,\n                \"source_term\": \"recruitment\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 12,\n                \"created_at\": \"2021-08-06T11:35:00.387Z\",\n                \"updated_at\": \"2021-08-06T11:35:00.387Z\"\n            }\n        ]\n    },\n    {\n        \"id\": 13,\n        \"source_language_code\": \"be\",\n        \"target_language_code\": \"ba\",\n        \"created_at\": \"2021-08-07T16:16:21.544Z\",\n        \"updated_at\": \"2021-08-07T16:16:21.544Z\",\n        \"terms\": [\n            {\n                \"id\": 10,\n                \"source_term\": \"recruitment\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 13,\n                \"created_at\": \"2021-08-07T16:17:00.112Z\",\n                \"updated_at\": \"2021-08-07T16:17:00.112Z\"\n            }\n        ]\n    },\n    {\n        \"id\": 14,\n        \"source_language_code\": \"cv\",\n        \"target_language_code\": \"cs\",\n        \"created_at\": \"2021-08-07T18:40:07.412Z\",\n        \"updated_at\": \"2021-08-07T18:40:07.412Z\",\n        \"terms\": [\n            {\n                \"id\": 11,\n                \"source_term\": \"recruitment\",\n                \"target_term\": \"green\",\n                \"glossary_id\": 14,\n                \"created_at\": \"2021-08-07T18:41:42.410Z\",\n                \"updated_at\": \"2021-08-07T18:41:42.410Z\"\n            },\n            {\n                \"id\": 12,\n                \"source_term\": \"recruitment\",\n                \"target_term\": \"hire\",\n                \"glossary_id\": 14,\n                \"created_at\": \"2021-08-07T18:42:14.656Z\",\n                \"updated_at\": \"2021-08-07T18:42:14.656Z\"\n            }\n        ]\n    },\n    {\n        \"id\": 15,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-07T18:43:05.209Z\",\n        \"updated_at\": \"2021-08-07T18:43:05.209Z\",\n        \"terms\": [\n            {\n                \"id\": 13,\n                \"source_term\": \"recruitment\",\n                \"target_term\": \"hire\",\n                \"glossary_id\": 15,\n                \"created_at\": \"2021-08-07T18:44:24.535Z\",\n                \"updated_at\": \"2021-08-07T18:44:24.535Z\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/api/v1/translations/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/translations/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"translations",
+						"1"
+					]
+				},
+				"description": "Get translation (when glossary is not present)."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/translations/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74e4fca2a8e96c452c7b9c7c9914f8ec\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "672c5e49-2b26-423a-9e49-fe9a710bee6c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.008524"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"source_text\": \"It is <HIGHLIGHT>Dzoɖagbe</HIGHLIGHT>.\",\n        \"glossary_id\": 1,\n        \"created_at\": \"2021-08-09T10:13:40.327Z\",\n        \"updated_at\": \"2021-08-09T10:13:40.327Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/translations/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74e4fca2a8e96c452c7b9c7c9914f8ec\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "672c5e49-2b26-423a-9e49-fe9a710bee6c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.008524"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"source_text\": \"It is <HIGHLIGHT>Dzoɖagbe</HIGHLIGHT>.\",\n        \"glossary_id\": 1,\n        \"created_at\": \"2021-08-09T10:13:40.327Z\",\n        \"updated_at\": \"2021-08-09T10:13:40.327Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/translations/9",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations",
+								"11"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ff65492ab0dc99e3bc23994ff5862da6\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "166ad7d7-cdaf-45aa-acd5-51847136075f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.004689"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 11,\n        \"source_language_code\": \"en\",\n        \"target_language_code\": \"ee\",\n        \"source_text\": \"This is a <HIGHLIGHT>recruitment</HIGHLIGHT> task\",\n        \"glossary_id\": 15,\n        \"created_at\": \"2021-08-07T18:49:27.889Z\",\n        \"updated_at\": \"2021-08-07T18:49:27.889Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/api/v1/glossaries?page=1&per_page=10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/glossaries?page=1&per_page=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"glossaries"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						}
+					]
+				},
+				"description": "Get glossary with terms."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/glossaries/15",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries",
+								"15"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f3af44ec969076d6592a865cb372c82\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "efc6b777-7f27-436b-84d5-7dc2b35221e5"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.011959"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 15,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-07T18:43:05.209Z\",\n        \"updated_at\": \"2021-08-07T18:43:05.209Z\",\n        \"terms\": [\n            {\n                \"id\": 13,\n                \"source_term\": \"recruitment\",\n                \"target_term\": \"hire\",\n                \"glossary_id\": 15,\n                \"created_at\": \"2021-08-07T18:44:24.535Z\",\n                \"updated_at\": \"2021-08-07T18:44:24.535Z\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries/15",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries?page=1&per_page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"53434d01f81ea99a846c3a4104da51d5\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b4a14d96-8218-48bc-b6fb-0282684290b1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.005671"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\",\n        \"terms\": [\n            {\n                \"id\": 1,\n                \"source_term\": \"Dzoɖagbe\",\n                \"target_term\": \"monday\",\n                \"glossary_id\": 1,\n                \"created_at\": \"2021-08-09T10:12:23.070Z\",\n                \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n            }\n        ]\n    }\n]"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries/15",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries?page=1&per_page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"53434d01f81ea99a846c3a4104da51d5\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b4a14d96-8218-48bc-b6fb-0282684290b1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.005671"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\",\n        \"terms\": [\n            {\n                \"id\": 1,\n                \"source_term\": \"Dzoɖagbe\",\n                \"target_term\": \"monday\",\n                \"glossary_id\": 1,\n                \"created_at\": \"2021-08-09T10:12:23.070Z\",\n                \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n            }\n        ]\n    }\n]"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/glossaries?page=1&per_page=10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/glossaries?page=1&per_page=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"glossaries"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"53434d01f81ea99a846c3a4104da51d5\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b4a14d96-8218-48bc-b6fb-0282684290b1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.005671"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"source_language_code\": \"ee\",\n        \"target_language_code\": \"en\",\n        \"created_at\": \"2021-08-09T10:03:32.430Z\",\n        \"updated_at\": \"2021-08-09T10:03:32.430Z\",\n        \"terms\": [\n            {\n                \"id\": 1,\n                \"source_term\": \"Dzoɖagbe\",\n                \"target_term\": \"monday\",\n                \"glossary_id\": 1,\n                \"created_at\": \"2021-08-09T10:12:23.070Z\",\n                \"updated_at\": \"2021-08-09T10:12:23.070Z\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=This is a recruitment task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=It is monday.",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"translations"
+					],
+					"query": [
+						{
+							"key": "source_language_code",
+							"value": "en"
+						},
+						{
+							"key": "target_language_code",
+							"value": "ee"
+						},
+						{
+							"key": "source_text",
+							"value": "It is monday."
+						}
+					]
+				},
+				"description": "Translation without glossary."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=This is a recruitment task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=This is a recruitment task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations"
+							],
+							"query": [
+								{
+									"key": "source_language_code",
+									"value": "en"
+								},
+								{
+									"key": "target_language_code",
+									"value": "ee"
+								},
+								{
+									"key": "source_text",
+									"value": "This is a recruitment task"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6dda223238becd1fa755e2be5c9ae273\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "f95aca4b-e9d8-4acc-925b-c2a7a0cd9cd8"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015216"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 12,\n        \"source_language_code\": \"en\",\n        \"target_language_code\": \"ee\",\n        \"source_text\": \"This is a recruitment task\",\n        \"glossary_id\": null,\n        \"created_at\": \"2021-08-07T18:56:04.415Z\",\n        \"updated_at\": \"2021-08-07T18:56:04.415Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=It is monday.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations?source_language_code=en&target_language_code=ee&source_text=It is monday.",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations"
+							],
+							"query": [
+								{
+									"key": "source_language_code",
+									"value": "en"
+								},
+								{
+									"key": "target_language_code",
+									"value": "ee"
+								},
+								{
+									"key": "source_text",
+									"value": "It is monday."
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4e30e30d82a2a1598a3f92d5faf716cd\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b1e129b4-ddd1-488b-b99c-9a0b2430a61e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.020762"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"created\",\n    \"data\": {\n        \"id\": 2,\n        \"source_language_code\": \"en\",\n        \"target_language_code\": \"ee\",\n        \"source_text\": \"It is monday.\",\n        \"glossary_id\": null,\n        \"created_at\": \"2021-08-09T10:15:49.019Z\",\n        \"updated_at\": \"2021-08-09T10:15:49.019Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/api/v1/translations/12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/translations/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"translations",
+						"2"
+					]
+				},
+				"description": "Get translation when glossary is not present."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/api/v1/translations/12",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations",
+								"12"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b06ed56cd1ea8779e0461809f7dcbaf0\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "7fd9d612-cbb7-4993-b141-ce236c131776"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.003620"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 12,\n        \"source_language_code\": \"en\",\n        \"target_language_code\": \"ee\",\n        \"source_text\": \"This is a recruitment task\",\n        \"glossary_id\": null,\n        \"created_at\": \"2021-08-07T18:56:04.415Z\",\n        \"updated_at\": \"2021-08-07T18:56:04.415Z\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost:3000/api/v1/translations/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/translations/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"translations",
+								"2"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"717bb057b3bfd806f57062d259c5d2ff\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "e9bbcdd4-750d-468e-a9e1-a12d848ba7b9"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.003054"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"record found\",\n    \"data\": {\n        \"id\": 2,\n        \"source_language_code\": \"en\",\n        \"target_language_code\": \"ee\",\n        \"source_text\": \"It is monday.\",\n        \"glossary_id\": null,\n        \"created_at\": \"2021-08-09T10:15:49.019Z\",\n        \"updated_at\": \"2021-08-09T10:15:49.019Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
